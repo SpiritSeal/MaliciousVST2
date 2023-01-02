@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\source\mypluginprocessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\source\myplugincontroller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\source\mypluginentry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\public.sdk\source\main\dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\source\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\source\myplugincids.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\source\mypluginprocessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\source\myplugincontroller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\resource\myplugineditor.uidesc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\resource\win32resource.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{243D6EDE-90E8-30B4-8CB8-FBEDCCA00576}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E255561A-95BB-32BF-903C-EA58565707DA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

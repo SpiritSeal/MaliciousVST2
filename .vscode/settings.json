@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.PolicyRules": "xml",
+        "xstring": "cpp",
+        "vector": "cpp"
+    }
+}

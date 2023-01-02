@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{16D35495-30E6-352B-AB1D-BFC3D308A4C5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/spyre/Documents/GitHub/testvst/VST_SDK/vst3sdk/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/spyre/Downloads/VSTSDK_Proj/projects/malvst/MaliciousVST -BC:/Users/spyre/Downloads/VSTSDK_Proj/projects/malvst/MaliciousVST/build --check-stamp-file C:/Users/spyre/Downloads/VSTSDK_Proj/projects/malvst/MaliciousVST/build/vst3sdk/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakePrintHelpers.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_AAXSupport.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_AddCommonOptions.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_AddSMTGLibrary.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_AddVST3Library.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_AddVST3Options.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_Bundle.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_CodeSign.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_ConfigureCmakeGenerator.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_CoreAudioSupport.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_CustomModuleTarget.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_DetectPlatform.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_ExportedSymbols.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_Global.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_PlatformIOS.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_PlatformToolset.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_Platform_Windows.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_PrefixHeader.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_SetDebugExecutable.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_SetupVST3LibraryDefaultPath.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_UniversalBinary.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_VST3_SDK.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_VstGuiSupport.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\build\vst3sdk\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/spyre/Documents/GitHub/testvst/VST_SDK/vst3sdk/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/spyre/Downloads/VSTSDK_Proj/projects/malvst/MaliciousVST -BC:/Users/spyre/Downloads/VSTSDK_Proj/projects/malvst/MaliciousVST/build --check-stamp-file C:/Users/spyre/Downloads/VSTSDK_Proj/projects/malvst/MaliciousVST/build/vst3sdk/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakePrintHelpers.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_AAXSupport.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_AddCommonOptions.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_AddSMTGLibrary.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_AddVST3Library.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_AddVST3Options.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_Bundle.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_CodeSign.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_ConfigureCmakeGenerator.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_CoreAudioSupport.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_CustomModuleTarget.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_DetectPlatform.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_ExportedSymbols.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_Global.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_PlatformIOS.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_PlatformToolset.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_Platform_Windows.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_PrefixHeader.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_SetDebugExecutable.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_SetupVST3LibraryDefaultPath.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_UniversalBinary.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_VST3_SDK.cmake;C:\Users\spyre\Documents\GitHub\testvst\VST_SDK\vst3sdk\cmake\modules\SMTG_VstGuiSupport.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\build\vst3sdk\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\build\ZERO_CHECK.proj">
+      <Project>{DA14C964-2063-3D7D-92D5-3CE5B91D354A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\build\vst3sdk\public.sdk\samples\vst-hosting\inspectorapp\VST3Inspector.vcxproj">
+      <Project>{7B000BBC-F155-34F4-B6FA-D0A74BFD0A14}</Project>
+      <Name>VST3Inspector</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\build\vst3sdk\base\base.vcxproj">
+      <Project>{741C0D1A-ABB8-3AAA-86A4-A244FBC08AE6}</Project>
+      <Name>base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\build\vst3sdk\public.sdk\samples\vst-utilities\moduleinfotool\moduleinfotool.vcxproj">
+      <Project>{26F31BEF-D60A-30AE-B5CE-F6E5A0DA1454}</Project>
+      <Name>moduleinfotool</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\build\vst3sdk\pluginterfaces\pluginterfaces.vcxproj">
+      <Project>{06666E7A-A040-37A9-9886-AAA44A029AA7}</Project>
+      <Name>pluginterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\build\vst3sdk\public.sdk\sdk.vcxproj">
+      <Project>{F5B7FF92-EC16-3595-A703-979492F302B2}</Project>
+      <Name>sdk</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\build\vst3sdk\public.sdk\sdk_common.vcxproj">
+      <Project>{DF6E8A96-C34D-3FCD-8116-085E6515AD05}</Project>
+      <Name>sdk_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\build\vst3sdk\public.sdk\sdk_hosting.vcxproj">
+      <Project>{BFDA3D9F-0251-3AC5-AD1A-A635D9E09302}</Project>
+      <Name>sdk_hosting</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\build\vst3sdk\public.sdk\samples\vst-hosting\validator\validator.vcxproj">
+      <Project>{E985845C-D7C2-320C-ABDA-C2DFF6ACAD22}</Project>
+      <Name>validator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\build\vst3sdk\VSTGUI.build\lib\vstgui.vcxproj">
+      <Project>{6377D590-A5AB-3BB5-BC5F-E6B2A6F68559}</Project>
+      <Name>vstgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\build\vst3sdk\VSTGUI.build\standalone\vstgui_standalone.vcxproj">
+      <Project>{33175BAF-2BBD-30BA-B1DB-31DC2B70ACEF}</Project>
+      <Name>vstgui_standalone</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\build\vst3sdk\vstgui_support.vcxproj">
+      <Project>{D5C6369A-BAC2-3262-80DF-981D3BF87A31}</Project>
+      <Name>vstgui_support</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\spyre\Downloads\VSTSDK_Proj\projects\malvst\MaliciousVST\build\vst3sdk\VSTGUI.build\uidescription\vstgui_uidescription.vcxproj">
+      <Project>{1A0FA4A5-E31C-36DB-AB32-B0FCC7793B9B}</Project>
+      <Name>vstgui_uidescription</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
